@@ -8,7 +8,7 @@ provider:
   httpApi:
     cors: true
   name: aws
-  runtime: nodejs14.x
+  runtime: nodejs16.x
   stage: ${opt:stage, 'dev'}
   region: us-east-1
   profile: serverless # You'll have to create your own profile with IAM creds to your AWS account
