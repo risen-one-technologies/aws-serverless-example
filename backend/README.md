@@ -1,8 +1,8 @@
-# RocDemo
+# AWS Serverless Example
 
 # Backend Deployment Guide
 
-This guide provides step-by-step instructions for deploying the backend of our serverless architecture project using AWS services.
+This guide provides step-by-step instructions for deploying the backend of the serverless architecture project using AWS services.
 
 ## Prerequisites
 
@@ -11,7 +11,7 @@ Before proceeding with deployment, ensure you have the following prerequisites:
 - AWS account with appropriate permissions to create and manage AWS resources.
 - AWS CLI installed and configured with access keys for the desired AWS account.
 - Node.js and npm installed on your local machine.
-- (Optional) Serverless Framework, AWS SAM, or AWS CDK installed globally for easier deployment.
+- (Optional) Serverless Framework installed globally for easier deployment.
 
 ## Deployment Steps
 
@@ -37,27 +37,12 @@ Before proceeding with deployment, ensure you have the following prerequisites:
     
        shell
         serverless deploy
-               
-    - If using AWS SAM:
-    
-       shell
-        sam deploy --guided
-               
-    - If using AWS CDK:
-    
-       shell
-        npm run build && cdk deploy
        
 5. **Testing**
 
     - Once the deployment is successful, test your backend thoroughly to ensure all functionalities are working as expected.
     - Test different endpoints, Lambda functions, and integrations to verify the functionality.
 
-6. **Monitoring and Maintenance**
-
-    - Set up appropriate monitoring and logging for your AWS resources using CloudWatch.
-    - Regularly monitor your backend's performance, errors, and usage metrics.
-    - Update and maintain your backend as needed, incorporating new features, optimizations, or security patches.
 
 ## Additional Resources
 
@@ -68,4 +53,4 @@ Before proceeding with deployment, ensure you have the following prerequisites:
 
 ## Support
 
-For any questions, issues, or feedback, please contact [Your Team/Contact Information].
+For any questions, issues, or feedback, please contact your Risen One Technologies Project Representative.
