@@ -8,6 +8,41 @@ This guide provides step-by-step instructions for deploying the backend of the s
 
 Before proceeding with deployment, ensure you have the following prerequisites:
 
+<<<<<<< backend_demo
+1. **AWS Account**: Sign up for an AWS account if you haven't already.
+   
+2. **AWS Console Configuration**:
+   - Log in to the [AWS Management Console](https://aws.amazon.com/console/).
+   - Familiarize yourself with the console layout and services you'll be using.
+   
+3. **AWS CLI Installation and Configuration**:
+   - Install the AWS Command Line Interface (CLI) on your local machine. You can download and install it from the [AWS CLI installation page](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html).
+   - Configure AWS CLI with your AWS credentials by running `aws configure` and providing your Access Key ID, Secret Access Key, default region, and output format. If you don't have credentials, follow the next step to create an IAM user.
+
+4. **IAM User Configuration**:
+   - Navigate to the IAM service in the AWS Management Console.
+   - Create a new IAM user with programmatic access.
+   - Attach policies to the IAM user based on the permissions required for your serverless application (e.g., AWSLambdaFullAccess, AmazonDynamoDBFullAccess).
+   - Take note of the Access Key ID and Secret Access Key provided for the IAM user.
+
+5. **Serverless Framework Installation**:
+   - Install Node.js and npm if you haven't already. You can download and install them from the [Node.js website](https://nodejs.org/).
+   - Install the Serverless Framework globally by running:
+     ```bash
+     npm install -g serverless
+     ```
+
+## Deployment Steps
+
+1. **Clone the Repository**:
+   ```shell
+   git clone <repository-url>
+   cd <repository-directory>
+   
+2. **Install Dependencies**
+
+shell
+=======
 - AWS account with appropriate permissions to create and manage AWS resources.
 - AWS CLI installed and configured with access keys for the desired AWS account.
 - Node.js and npm installed on your local machine.
@@ -24,6 +59,7 @@ Before proceeding with deployment, ensure you have the following prerequisites:
 2. **Install Dependencies**
 
    shell
+>>>>>>> main
     npm install
    
 3. **Configuration**
