@@ -37,13 +37,19 @@
         {{ job.companyName }} | {{ job.location }} | {{ job.createdDate }}
       </div>
       <div class="description">{{ job.description.substring(0, 100) }}...</div>
-      <button
-        mat-stroked-button
-        class="detail-btn"
-        color="primary"
-        (click)="openModal(job)"
-      >
+      <hr />
+      <button mat-stroked-button
+              class="detail-btn"
+              color="primary"
+              (click)="openModal(job)">
         Details
+      </button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button mat-stroked-button
+              class="detail-btn"
+              color="primary"
+              (click)="deleteJob(job)">
+        Delete
       </button>
     </div>
   </div>

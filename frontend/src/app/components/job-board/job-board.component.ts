@@ -64,4 +64,16 @@ export class JobBoardComponent implements OnInit {
       },
     });
   }
+
+  deleteJob(job: any) {
+    console.log('deleting job ', job);
+    this.api.deleteJob(job.id).subscribe({
+      next: () => {
+        this.search(this.jobTitle,this.location);
+      },
+      error: () => {
+        console.log('ERROR');
+      },
+    });
+  }
 }

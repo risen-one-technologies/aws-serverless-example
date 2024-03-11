@@ -11,6 +11,8 @@ export class ApiService {
   private baseUrl = environment.apiUrl;
   private jobUrl = this.baseUrl + Constants.APIS.JOBS;
   private adminJobUrl = this.baseUrl + Constants.ADMIN_ROUTES.JOBS;
+  private deleteJobUrl = this.baseUrl + Constants.APIS.DELETE_JOB;
+
 
   constructor(private http: HttpClient) {}
 
@@ -24,6 +26,10 @@ export class ApiService {
 
   addJob(requestParams: any) {
     return this.http.post<any>(this.adminJobUrl, requestParams);
+  }
+
+  deleteJob(id: string) {
+    return this.http.get<any>(this.deleteJobUrl + '/' + id);
   }
 
 }

@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\frontend",
+    "\\frontend\\src",
+    "\\frontend\\src\\app",
+    "\\frontend\\src\\app\\components",
+    "\\frontend\\src\\app\\components\\admin",
+    "\\frontend\\src\\app\\components\\job-board",
+    "\\frontend\\src\\app\\services",
+    "\\frontend\\src\\app\\shared",
+    "\\frontend\\src\\app\\shared\\constants"
+  ],
+  "SelectedNode": "\\backend\\createJob.js",
+  "PreviewInSolutionExplorer": false
+}
