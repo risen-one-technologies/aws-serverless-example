@@ -78,12 +78,7 @@
       font-weight: 500;
     }
 
-    .detail-btn {
-      font-size: 12px;
-      /*position: absolute;
-      top: 20%;
-      right: 10px;*/
-    }
+    
   }
 
   .title {
@@ -254,5 +249,10 @@ footer {
   }
 }
 
-
+.detail-btn {
+  font-size: 12px;
+  position: absolute;
+  top: 20%;
+  right: 10px;
+}
 
