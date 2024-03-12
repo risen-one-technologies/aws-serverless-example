@@ -3,5 +3,5 @@
 export const environment = {
   state: 'production',
   production: true,
-  apiUrl: 'https://xxxxx.execute-api.us-east-1.amazonaws.com',
+  apiUrl: 'https://muayreoktb.execute-api.us-east-1.amazonaws.com',
 }

@@ -10,8 +10,8 @@ provider:
   name: aws
   runtime: nodejs16.x
   stage: ${opt:stage, 'dev'}
-  region: us-east-1
-  profile: roc_serverless # You'll have to create your own profile with IAM creds to your AWS account
+  region: us-east-2
+  profile: default # You'll have to create your own profile with IAM creds to your AWS account
   iam: # Role is applied globally to all functions below allowing access to dynamodb table JobsTable
     role:
       statements:
@@ -53,6 +53,16 @@ functions:
       - httpApi:
           path: /jobs
           method: post
+    environment:
+      JOBS_TABLE: ${self:custom.jobsTableName}
+    role: dynamoRole
+
+  deleteJob:
+    handler: deleteJob.deleteJob
+    events:
+      - httpApi:
+          path: /job/delete/{id}
+          method: get
     environment:
       JOBS_TABLE: ${self:custom.jobsTableName}
     role: dynamoRole
