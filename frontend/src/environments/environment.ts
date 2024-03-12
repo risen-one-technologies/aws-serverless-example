@@ -8,7 +8,7 @@
 export const environment = {
   state: 'local',
   production: false,
-  apiUrl: 'https://xxxxx.execute-api.us-east-1.amazonaws.com',
+  apiUrl: 'https://muayreoktb.execute-api.us-east-1.amazonaws.com',
 }
 
 /*
